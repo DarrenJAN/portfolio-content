@@ -11,3 +11,95 @@ img:hover {
     padding: 10px;
 	border: 20px dotted lightpink;
 }
+
+body {
+    background-image: url("../images/background3.jpg");
+    background-color: #d6c3c3;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'aside'
+    'main'
+    'footer';
+}
+
+img {
+    animation: fadeIn 3s; 
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@keyframes fadeIn {
+0% {
+    opacity:0;
+}
+100% {
+    opacity:1;
+}
+}
+
+.gallery img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    img {
+      animation: none;
+    }
+  }
+
+@media only screen and (min-width: 700px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+    }
+
+    img {
+        animation: fadeIn 3s; 
+    }
+
+    @keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        img {
+          animation: none;
+        }
+    }
+
+}
+
