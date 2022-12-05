@@ -30,14 +30,14 @@ li a {
 }
 
 body {
-    background-image: url("../images/background3.jpg");
+    font-family: "Audiowide", sans-serif;
     background-color: #d6c3c3;
     color: black;
 }
-
 body {
-    font-family: "Audiowide", sans-serif;
+    background-image: url("../images/background3.jpg");
 }
+
 
 body {
     display: grid;
