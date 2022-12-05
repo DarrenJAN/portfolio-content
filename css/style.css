@@ -27,7 +27,7 @@ li a {
 
 .nav #current{
 	text-decoration: underline;
-    color: yellowgreen;
+    color: red;
 }
 
 body {
