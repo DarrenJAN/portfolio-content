@@ -20,14 +20,20 @@ li a {
     text-decoration: none;
   }
 
-li a:hover {
+.nav a:hover {
     background-color: #555;
     color: white;
+}
+
+.nav #current{
+	text-decoration: underline;
+    color: yellowgreen;
 }
 
 body {
     background-image: url("../images/background3.jpg");
     background-color: #d6c3c3;
+    color: black;
 }
 
 body {
@@ -78,6 +84,31 @@ footer {
     width: 100%;
 }
 
+.form{
+	display: grid;
+	margin-top: 0;
+	margin-bottom: 0; 
+	margin-left: 1%;
+	margin-right: 5%;
+	text-align: left;
+}
+
+.skip a{
+    background: white;
+    right: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
 
 @media (prefers-reduced-motion: reduce) {
     img {
@@ -107,6 +138,47 @@ footer {
         opacity:1;
     }
     }
+
+    .form{
+		margin-left: 14%;
+		margin-right: 25%;
+	}
+
+    @media (prefers-reduced-motion: reduce) {
+        img {
+          animation: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+    }
+
+    img {
+        animation: fadeIn 3s; 
+    }
+
+    @keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+    }
+
+    .form{
+		margin-left: 14%;
+		margin-right: 25%;
+	}
 
     @media (prefers-reduced-motion: reduce) {
         img {

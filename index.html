@@ -9,14 +9,23 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TVP6H1GQM"></script>
+	<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-6TVP6H1GQM');
+		</script>
 	<title>Post Malone</title>
 </head>
 
 <body>
 	<header>
+		<div class="skip"><a href="#main" tabindex="1">Skip to Main Content</a></div><!--tabindex = keyboard accessible-->
 		<nav>
-			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
+			<ul class="nav">
+				<li class="active"><a href="index.html" id="current">Home</a></li>
 				<li class="active"><a href="awards.html">Awards</a></li>
 				<li class="active"><a href="shows.html">Shows</a></li>
 				<li class="active"><a href="gallery.html">Gallery</a></li>
@@ -24,7 +33,7 @@
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<i class="fa-sharp fa-solid fa-headphones" style="font-size:60px;color:blue;"></i>
 		<i class="fa-sharp fa-solid fa-headphones" style="font-size:60px;color:blue;"></i>
 		<i class="fa-sharp fa-solid fa-headphones" style="font-size:60px;color:blue;"></i>
@@ -69,5 +78,6 @@
 		&copy; 2022
 	</footer>
 	<aside> INFORMATION</aside>
+	<!-- modify this form HTML and place wherever you want your form -->
 </body>
 </html>

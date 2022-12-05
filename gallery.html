@@ -13,17 +13,18 @@
 
 <body>
 	<header class="gallery-header">
+		<div class="skip"><a href="#main" tabindex="1">Skip to Main Content</a></div><!--tabindex = keyboard accessible-->
 		<nav>
-			<ul>
+			<ul class="nav">
 				<li class="active"><a href="index.html">Home</a></li>
 				<li class="active"><a href="awards.html">Awards</a></li>
 				<li class="active"><a href="shows.html">Shows</a></li>
-				<li class="active"><a href="gallery.html">Gallery</a></li>
+				<li class="active"><a href="gallery.html" id="current">Gallery</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<figure>
 			<img src="images/Post-Malone-GettyImages.jpeg" alt="Post Malone in the bar with buglight" width="500" class="gallery">
 			<figcaption>Post Malone</figcaption>
@@ -62,5 +63,26 @@
 		&copy; 2022
 	</footer>
 	<aside class="gallery-aside"> Have a good day!</aside>
+
+<div class="form">
+	<form action="https://formspree.io/f/xqkjvwzp" method="POST">
+			<label for="fname">Name:</label>
+			<br>
+		  	<input type="text" id="name" name="name" required/>
+		  	<br>
+		  	<br>
+		  	<label for="email">Email:</label>
+		  	<br>
+		  	<input type="text" id="email" name="email" required/>
+		  	<br>
+		  	<br>
+		  	<label for="message">Message:</label>
+		  	<br>
+		  	<input type="text" id="message" name="message" required/>
+		  	<br>
+		  	<br>
+	  		<input type="submit" value="Submit">
+		</form>
+	</div>
 </body>
 </html>
