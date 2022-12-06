@@ -1,3 +1,8 @@
+.nav {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
 img {
 	width: 350px;
     margin: 10px;
@@ -20,6 +25,8 @@ li a {
     text-decoration: none;
   }
 
+
+
 .nav a:hover {
     background-color: #555;
     color: white;
@@ -34,10 +41,6 @@ body {
     background-color: #d6c3c3;
     color: black;
 }
-/* body {
-    background-image: url("../images/background3.jpg");
-} */
-
 
 body {
     display: grid;
@@ -117,6 +120,13 @@ footer {
 
 @media only screen and (min-width: 700px) {
 
+    img {
+        max-width: 700px;
+    }
+    /* .nav {
+        grid-template-rows: auto auto auto auto;
+    } */
+
     body {
         display: grid;
         grid-template-areas:
@@ -137,11 +147,10 @@ footer {
         opacity:1;
     }
     }
-
-    .form{
-		margin-left: 14%;
-		margin-right: 25%;
-	}
+    
+    .nav {
+        grid-template-columns: auto auto auto auto;
+    }
 
     @media (prefers-reduced-motion: reduce) {
         img {
@@ -162,6 +171,13 @@ footer {
     }
 
     img {
+        max-width: 800px;
+    }
+    .nav {
+        font-size: 20px;
+    }
+
+    img {
         animation: fadeIn 3s; 
     }
 
@@ -173,11 +189,6 @@ footer {
         opacity:1;
     }
     }
-
-    .form{
-		margin-left: 14%;
-		margin-right: 25%;
-	}
 
     @media (prefers-reduced-motion: reduce) {
         img {
